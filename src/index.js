@@ -26,7 +26,7 @@ exports.max = function max (array) {
 };
 
 exports.avg = function avg (array) {
-    if (typeof array === 'undefined'){
+    if (typeof array === 'undefined' || array.length === 0){
         return 0;
     }
   return array.reduce((acc, val) => acc + val) / array.length;
